@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>Tugas 2</title>
+</head>
+<script language="JavaScript">
+	//Aritmatika proses Penjumlahan
+	function tambah() {
+		var bil1 = document.kirim.t1.value
+		var bil2 = document.kirim.t2.value
+
+		document.kirim.t3. value = parseInt(bil1)+parseInt(bil2)
+	}
+	//Aritmatika proses Pengurangan
+	function kurang() {
+		var bil1 = document.kirim.t1.value
+		var bil2 = document.kirim.t2.value
+
+		document.kirim.t3. value = bil1-bil2
+	}
+	//Aritmatika proses Pembagian
+	function pembagian() {
+		var bil1 = document.kirim.t1.value
+		var bil2 = document.kirim.t2.value
+
+		document.kirim.t3. value = bil1/bil2
+	}
+	//Aritmatika proses modulus
+	function modulus() {
+		var bil1 = document.kirim.t1.value
+		var bil2 = document.kirim.t2.value
+
+		document.kirim.t3. value = bil1%bil2
+	}
+	//Aritmatika proses Perkalian
+	function perkalian() {
+		var bil1 = document.kirim.t1.value
+		var bil2 = document.kirim.t2.value
+
+		document.kirim.t3. value = bil1*bil2
+	}
+</script>
+<body>
+	<form method="POST" name="kirim">
+		<!-- Input nilai -->
+		<p>
+			Bilangan 1
+			<input type="number" name="t1" size="20">  <br>
+			Bilangan 2 
+			<input type="number" name="t2" size="20"> <br>
+			Hasil
+			<input type="text" name="t3" size="20" readonly=""> <!-- hasil aritmatika -->
+		</p>
+		<!-- Button untuk memanggil function js -->
+		<p>
+			<input type="button" name="b1" value="+" onclick= tambah()>
+			<input type="button" name="b1" value="-" onclick= kurang()>
+			<input type="button" name="b1" value="/" onclick= pembagian()>
+			<input type="button" name="b1" value="%" onclick= modulus()>
+			<input type="button" name="b1" value="*" onclick= perkalian()>
+		</p>
+	</form>
+</body>
+</html>

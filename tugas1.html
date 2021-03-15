@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Tugas 1</title>
+</head>
+<script language="JavaScript">
+	//MENGISI Nilai Dengan mengikuti perintah text
+	
+	var nilai = prompt("Nilai (0-100) : ", 0);
+	var hasil = "";
+	//Pengoperasian Lulus atau Tidak
+
+	if (nilai >= 0 && nilai <=40) {
+		hasil = "E"; 
+        //0-40 =E
+	}else if (nilai >= 41 && nilai <= 55){
+		hasil = "D"; 
+        //41-55=D
+	}else if (nilai >= 56 && nilai <= 60) {
+		hasil = "C"; 
+        //56-60=C
+	}else if (nilai >= 61 && nilai <= 65) {
+		hasil = "BC"; 
+        //61-65=BC
+	}else if (nilai >= 66 && nilai <= 70) {
+		hasil = "B"; 
+        //66-70=B
+	}else if (nilai >= 71 && nilai <= 80) {
+		hasil = "AB"; 
+        //71-80=AB
+	}else if (nilai >= 81 && nilai <= 100) {
+		hasil = "A"; 
+        //81-100=A
+	}else{
+		hasil = "Nilai Tidak Sesuai 0 - 100"
+	}
+	document.write("Hasil : "+hasil) 
+    //Menampilkan hasil
+</script>
+<body>
+
+</body>
+</html>
